@@ -57,6 +57,7 @@ return {
 
       ensure_installed = {
         "elixirls",
+        -- "expert",
         "lua_ls",
         "rust_analyzer",
         "elp",

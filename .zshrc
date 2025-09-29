@@ -186,3 +186,6 @@ alias l="eza -a -h -l --no-user --git --icons --color=always --group-directories
 export PATH="$PATH:/Users/lukaszpauszek/.lmstudio/bin"
 export MANPAGER="nvim +Man!"
 export AWS_PROFILE=ebitmax
+if command -v ngrok &>/dev/null; then
+    eval "$(ngrok completion)"
+fi

@@ -31,6 +31,13 @@ return {
       desc = "Get symbols in a file from LSP",
       { noremap = true, silent = true },
     },
+    {
+      "<Leader>gh",
+      "<cmd> FzfLua git_bcommits<CR>",
+      "n",
+      desc = "Search through file git history",
+      { noremap = true, silent = true },
+    },
   },
   opts = {
     fzf_opts = { ["--wrap"] = true },
