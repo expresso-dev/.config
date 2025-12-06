@@ -1,5 +1,5 @@
-erlang 27.2.4
-elixir 1.18.2-otp-27
+erlang 28.2
+elixir 1.19.4-otp-28
 kubectl 1.28.2
 kubetail 1.6.18
 yarn 1.22.22

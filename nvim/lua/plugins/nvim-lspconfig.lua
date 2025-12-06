@@ -19,13 +19,13 @@ return {
 
     vim.lsp.config("*", {
       capabilities = capabilities,
-      on_attach = on_attach(),
+      on_attach = on_attach,
     })
 
     vim.lsp.config("lua_ls", {
       settings = {
         Lua = {
-          runtime = { version = "Lua 5.1" },
+          runtime = { version = "LuaJIT" },
           diagnostics = { globals = { "vim", "bit", "it", "describe", "before_each", "after_each" } },
           telemetry = { enable = false },
         },
@@ -45,7 +45,7 @@ return {
       settings = {
         ["rust-analyzer"] = {
           diagnostics = { enable = false },
-          checkOnSave = { command = "clippy" },
+          check = { command = "clippy" },
           cargo = { features = "all" },
         },
       },
